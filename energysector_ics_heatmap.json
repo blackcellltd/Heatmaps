@@ -1,24 +1,15 @@
 {
-	"name": "electricsector_ICS_heatmap",
+	"name": "Energy-ICS",
 	"versions": {
-		"attack": "12",
-		"navigator": "4.7.0",
-		"layer": "4.3"
+		"attack": "15",
+		"navigator": "5.1.0",
+		"layer": "4.5"
 	},
 	"domain": "ics-attack",
 	"description": "",
 	"filters": {
 		"platforms": [
-			"Field Controller/RTU/PLC/IED",
-			"Device Configuration/Parameters",
-			"Human-Machine Interface",
-			"Control Server",
-			"Data Historian",
-			"Engineering Workstation",
-			"Safety Instrumented System/Protection Relay",
-			"None",
-			"Input/Output Server",
-			"Windows"
+			"None"
 		]
 	},
 	"sorting": 0,
@@ -28,113 +19,15 @@
 		"showID": false,
 		"showName": true,
 		"showAggregateScores": false,
-		"countUnscored": false
+		"countUnscored": false,
+		"expandedSubtechniques": "none"
 	},
 	"hideDisabled": false,
 	"techniques": [
 		{
-			"techniqueID": "T0865",
-			"tactic": "initial-access-ics",
-			"score": 75,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0817",
-			"tactic": "initial-access-ics",
-			"score": 58,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0852",
-			"tactic": "collection-ics",
-			"score": 15,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0859",
-			"tactic": "persistence-ics",
-			"score": 79,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0859",
-			"tactic": "lateral-movement-ics",
-			"score": 79,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0803",
-			"tactic": "inhibit-response-function",
-			"score": 51,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0881",
-			"tactic": "inhibit-response-function",
-			"score": 28.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0829",
-			"tactic": "impact-ics",
-			"score": 28.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0800",
-			"tactic": "inhibit-response-function",
-			"score": 28.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0831",
-			"tactic": "impact-ics",
-			"score": 28.5,
+			"techniqueID": "T0802",
+			"tactic": "collection",
+			"score": 24,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -145,7 +38,117 @@
 		{
 			"techniqueID": "T0814",
 			"tactic": "inhibit-response-function",
-			"score": 28.5,
+			"score": 61.7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0861",
+			"tactic": "collection",
+			"score": 24,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0846",
+			"tactic": "discovery",
+			"score": 54,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0888",
+			"tactic": "discovery",
+			"score": 24,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0865",
+			"tactic": "initial-access",
+			"score": 102.6,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0862",
+			"tactic": "initial-access",
+			"score": 24,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0863",
+			"tactic": "execution",
+			"score": 24,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0803",
+			"tactic": "inhibit-response-function",
+			"score": 30,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0881",
+			"tactic": "inhibit-response-function",
+			"score": 22.4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0829",
+			"tactic": "impact",
+			"score": 7.7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0831",
+			"tactic": "impact",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -156,7 +159,18 @@
 		{
 			"techniqueID": "T0805",
 			"tactic": "inhibit-response-function",
-			"score": 28.5,
+			"score": 30,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0894",
+			"tactic": "evasion",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -166,8 +180,8 @@
 		},
 		{
 			"techniqueID": "T0807",
-			"tactic": "execution-ics",
-			"score": 51,
+			"tactic": "execution",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -178,40 +192,7 @@
 		{
 			"techniqueID": "T0816",
 			"tactic": "inhibit-response-function",
-			"score": 51,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0860",
-			"tactic": "initial-access-ics",
-			"score": 5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0837",
-			"tactic": "impact-ics",
-			"score": 28.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0801",
-			"tactic": "collection-ics",
-			"score": 28.5,
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -221,19 +202,8 @@
 		},
 		{
 			"techniqueID": "T0853",
-			"tactic": "execution-ics",
-			"score": 22.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0888",
-			"tactic": "discovery-ics",
-			"score": 28.5,
+			"tactic": "execution",
+			"score": 78.6,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -243,30 +213,8 @@
 		},
 		{
 			"techniqueID": "T0819",
-			"tactic": "initial-access-ics",
-			"score": 37.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0864",
-			"tactic": "initial-access-ics",
-			"score": 5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0802",
-			"tactic": "collection-ics",
-			"score": 28.5,
+			"tactic": "initial-access",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -277,7 +225,7 @@
 		{
 			"techniqueID": "T0804",
 			"tactic": "inhibit-response-function",
-			"score": 51,
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -288,7 +236,7 @@
 		{
 			"techniqueID": "T0855",
 			"tactic": "impair-process-control",
-			"score": 51,
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -297,9 +245,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0809",
-			"tactic": "inhibit-response-function",
-			"score": 28.5,
+			"techniqueID": "T0828",
+			"tactic": "impact",
+			"score": 60.1,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -308,9 +256,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0832",
-			"tactic": "impact-ics",
-			"score": 28.5,
+			"techniqueID": "T0895",
+			"tactic": "execution",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -319,9 +267,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0815",
-			"tactic": "impact-ics",
-			"score": 28.5,
+			"techniqueID": "T0817",
+			"tactic": "initial-access",
+			"score": 25.2,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -330,31 +278,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0862",
-			"tactic": "initial-access-ics",
-			"score": 43,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0866",
-			"tactic": "initial-access-ics",
-			"score": 10,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0866",
-			"tactic": "lateral-movement-ics",
-			"score": 10,
+			"techniqueID": "T0812",
+			"tactic": "lateral-movement",
+			"score": 7.7,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -364,19 +290,8 @@
 		},
 		{
 			"techniqueID": "T0822",
-			"tactic": "initial-access-ics",
-			"score": 32.5,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T0806",
-			"tactic": "impair-process-control",
-			"score": 28.5,
+			"tactic": "initial-access",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -386,8 +301,8 @@
 		},
 		{
 			"techniqueID": "T0827",
-			"tactic": "impact-ics",
-			"score": 28.5,
+			"tactic": "impact",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -397,8 +312,8 @@
 		},
 		{
 			"techniqueID": "T0823",
-			"tactic": "execution-ics",
-			"score": 22.5,
+			"tactic": "execution",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -407,9 +322,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0848",
-			"tactic": "initial-access-ics",
-			"score": 10,
+			"techniqueID": "T0826",
+			"tactic": "impact",
+			"score": 37.7,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -419,8 +334,8 @@
 		},
 		{
 			"techniqueID": "T0857",
-			"tactic": "persistence-ics",
-			"score": 22.5,
+			"tactic": "persistence",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -431,7 +346,7 @@
 		{
 			"techniqueID": "T0857",
 			"tactic": "inhibit-response-function",
-			"score": 22.5,
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -441,8 +356,8 @@
 		},
 		{
 			"techniqueID": "T0849",
-			"tactic": "evasion-ics",
-			"score": 22.5,
+			"tactic": "evasion",
+			"score": 52.4,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -451,9 +366,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0847",
-			"tactic": "initial-access-ics",
-			"score": 15,
+			"techniqueID": "T0852",
+			"tactic": "collection",
+			"score": 23.4,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -462,9 +377,20 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T0846",
-			"tactic": "discovery-ics",
-			"score": 28.5,
+			"techniqueID": "T0859",
+			"tactic": "persistence",
+			"score": 55.2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0859",
+			"tactic": "lateral-movement",
+			"score": 55.2,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -474,8 +400,8 @@
 		},
 		{
 			"techniqueID": "T0884",
-			"tactic": "command-and-control-ics",
-			"score": 51,
+			"tactic": "command-and-control",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -485,8 +411,8 @@
 		},
 		{
 			"techniqueID": "T0869",
-			"tactic": "command-and-control-ics",
-			"score": 22.5,
+			"tactic": "command-and-control",
+			"score": 25.2,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -496,8 +422,8 @@
 		},
 		{
 			"techniqueID": "T0886",
-			"tactic": "initial-access-ics",
-			"score": 51.5,
+			"tactic": "initial-access",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -507,8 +433,8 @@
 		},
 		{
 			"techniqueID": "T0886",
-			"tactic": "lateral-movement-ics",
-			"score": 51.5,
+			"tactic": "lateral-movement",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -518,8 +444,19 @@
 		},
 		{
 			"techniqueID": "T0813",
-			"tactic": "impact-ics",
-			"score": 28.5,
+			"tactic": "impact",
+			"score": 30,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0885",
+			"tactic": "command-and-control",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -529,8 +466,8 @@
 		},
 		{
 			"techniqueID": "T0840",
-			"tactic": "discovery-ics",
-			"score": 28.5,
+			"tactic": "discovery",
+			"score": 22.4,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -540,8 +477,8 @@
 		},
 		{
 			"techniqueID": "T0867",
-			"tactic": "lateral-movement-ics",
-			"score": 22.5,
+			"tactic": "lateral-movement",
+			"score": 30,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -551,8 +488,8 @@
 		},
 		{
 			"techniqueID": "T0883",
-			"tactic": "initial-access-ics",
-			"score": 15,
+			"tactic": "initial-access",
+			"score": 7.7,
 			"color": "",
 			"comment": "",
 			"enabled": true,
@@ -567,8 +504,8 @@
 			"#ffe766ff",
 			"#ff6666ff"
 		],
-		"minValue": 5,
-		"maxValue": 79
+		"minValue": 7.7,
+		"maxValue": 102.6
 	},
 	"legendItems": [],
 	"metadata": [],
@@ -576,5 +513,6 @@
 	"showTacticRowBackground": false,
 	"tacticRowBackground": "#dddddd",
 	"selectTechniquesAcrossTactics": true,
-	"selectSubtechniquesWithParent": false
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
 }
